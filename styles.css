@@ -114,6 +114,11 @@ nav {
   height: 0;
 }
 
+.nav__link--primary:hover {
+  background-color: #5011cc;
+  color: #fff;
+}
+
 .row {
   width: 100%;
   max-width: 1280px;

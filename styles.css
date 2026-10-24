@@ -18,8 +18,32 @@ a {
   text-decoration: none;
 }
 
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.row__narrow {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.purple {
+  color: #6415ff;
+}
+
+.container {
+  padding: 96px 0;
+}
+
 section {
   padding: 0 32px;
+}
+
+main {
+  margin-bottom: 96px;
 }
 
 /* 
@@ -119,11 +143,7 @@ nav {
   color: #fff;
 }
 
-.row {
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-}
+/* FIX BELOW TO SHOW CORRECT & ADD SIBLING INFO */
 
 .header__description {
     width: 40%;
@@ -159,15 +179,6 @@ img {
     width: 100%;
 }
 
-
-
-
-
-/*
-
-BUTTON
-
-*/
 
 @media (max-width: 1024px) {
   .btn__menu {
@@ -257,10 +268,6 @@ button {
   h1 {
     font-size: 30px;
   }
-}
-
-.purple {
-  color: #6415ff;
 }
 
 @media (max-width: 1024px) {
@@ -441,18 +448,6 @@ header {
   }
 }
 
-.container {
-  padding: 96px 0;
-    padding-top: 96px;
-    padding-right: 0px;
-    padding-bottom: 96px;
-    padding-left: 0px;
-}
-
-main {
-  margin-bottom: 96px;
-}
-
 #features {
   position: relative;
 }
@@ -461,12 +456,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.row__narrow {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
 }
 
 .section__tag {

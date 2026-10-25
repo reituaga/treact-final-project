@@ -396,14 +396,31 @@ FEATURES
 
 */
 
+
 #features {
   position: relative;
+}
+
+.container {
+  padding: 96px 0;
+}
+
+.features {
+  max-width: 768px;
 }
 
 #features .row__narrow {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 
@@ -544,10 +561,6 @@ button {
   }
 }
 
-header {
-  position: relative;
-}
-
 @media (max-width: 1024px) {
   .header__description--para {
     margin: 20px 0;
@@ -600,44 +613,16 @@ header {
   }
 }
 
-.section__tag {
-  font-size: 16px;
-  color: #6415ff;
-  letter-spacing: 1.6px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 @media (max-width: 1024px) {
   #features .section__title, #pricing .section__title {
     font-size: 48px;
   }
 }
 
-#features .section__title, #pricing .section__title {
-  text-align: center;
-}
-
-.feature__img {
-  width: 24px;
-  height: 24px;
-}
-
-#features .section__para {
-  text-align: center;
-  max-width: 576px;
-}
-
 @media (max-width: 1024px) {
   .features {
     max-width: 768px;
   }
-}
-
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 40px;
 }
 
 @media (max-width: 1024px) {
@@ -659,48 +644,6 @@ header {
         margin-bottom: 0px;
         margin-left: 16px;
   }
-}
-
-.feature__img--wrapper {
-  display: flex;
-  padding: 20px;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-  border: 1px solid #e5e7eb;
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: rgb(229, 231, 235);
-    border-right-color: rgb(229, 231, 235);
-    border-bottom-color: rgb(229, 231, 235);
-    border-left-color: rgb(229, 231, 235);
-    border-image-source: none;
-    border-image-slice: 100%;
-    border-image-width: 1;
-    border-image-outset: 0;
-    border-image-repeat: stretch;
-  border-radius: 500px;
-    border-top-left-radius: 500px;
-    border-top-right-radius: 500px;
-    border-bottom-right-radius: 500px;
-    border-bottom-left-radius: 500px;
-}
-
-.feature__img {
-  width: 24px;
-  height: 24px;
-}
-
-.feature__text {
-  margin-top: 8px;
-  margin-left: 16px;
 }
 
 @media (max-width: 1024px) {

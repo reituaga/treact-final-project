@@ -414,7 +414,6 @@ header .row {
   max-width: 768px;
 }
 
-
 /*
 
 FEATURES
@@ -654,6 +653,15 @@ FEATURES
     margin-top: 16px;
     margin-bottom: 32px;
   }
+  
+  .plan__top {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    line-height: 1.625;
+  }
 
   .values__list {
     margin-left: 0px;
@@ -709,6 +717,88 @@ FEATURES
 
   #values .btn {
     margin-top: 48px;
+  }
+
+  #pricing .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #features .section__title, #pricing .section__title {
+    text-align: center;
+  }
+
+  #pricing .section__para {
+    max-width: 576px;
+    text-align: center;
+  }
+
+  .plan {
+    position: relative;
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    max-width: 24rem;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background-color: rgb(255 255 255);
+    padding-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+    color: rgb(26 32 44);
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  }
+
+  .plan__name {
+    font-size: 20px;
+  }
+
+  .plan__price {
+    font-size: 48px;
+    margin: 4px 0;
+  }
+
+  .plan .plan__duration {
+    font-size: 16px;
+    letter-spacing: 0.1em;
+  }
+
+  .plan__name, .plan__price, .plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+  }
+
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__stripe {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.plan:nth-child(odd) .plan__name, .plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
+  color: #1a202c;
+}
+
+.plan:nth-child(odd) .plan__duration {
+  color: #a0aec0;
+}
+
+.plans {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
   }
 
   @media (max-width: 1024px) {
@@ -767,6 +857,19 @@ FEATURES
 @media (max-width: 1024px) {
   .btn__menu {
     display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .plan {
+    margin-right: 0px;
   }
 }
 
